@@ -1,0 +1,82 @@
+.main-nav {
+    background-color: darkorchid;
+    justify-content: space-between;
+    display: flex;
+
+}
+.search-form {
+    display: flex;
+    flex-grow: 1;
+    
+
+}
+.search-form input {
+    padding: 0.25em 0.5em;
+    flex: 1;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid darkorchid;
+}
+.search-form button {
+    background: darkmagenta;
+    color: white;
+    padding: 0.25em 0.5em;
+    border: none;
+}
+
+.sub-nav {
+    display: flex;
+    background-color: darkmagenta;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0;
+}
+@media (max-width: 768px) {
+       .horizontal.nav-list.full-width {
+        display: none;
+        
+       }
+       .horizontal.nav-list.short-width {
+        display: flex;
+       }
+}
+@media (min-width: 769px) {
+    .horizontal.nav-list.full-width {
+        display: flex;
+    }
+    .horizontal.nav-list.short-width {
+        display: none;
+    }
+}
+.horizontal.nav-list {
+    display: flex;
+    flex-direction: row;
+
+}
+.horizontal.nav-list a {
+    font-weight: bold;
+    text-decoration: none;
+    display: block;
+    color: white;
+    padding: 0.25em 0.5em;
+    border-right: 1px solid darkmagenta;
+}
+.company-name {
+    text-align: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 34px;
+    color: darkmagenta;
+    margin: 0 1rem;
+    min-width: 256px;
+
+}
+.credit-offer {
+    text-decoration: none;
+    color: #eee;
+    font-weight: bold;
+    font-size: 19px;
+    background: red;
+    padding: 0.25rem 0.5rem;
+    flex-shrink: 0;
+    margin: 0 1rem;
+}
